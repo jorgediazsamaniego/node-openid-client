@@ -14,7 +14,8 @@ const nock = require('nock');
 const sinon = require('sinon');
 const OpenIdConnectError = require('../../lib/open_id_connect_error');
 const TokenSet = require('../../lib/token_set');
-const got = require('got');
+// const got = require('got');
+const got = require('../../lib/request');
 const http = require('http');
 const jose = require('node-jose');
 const timekeeper = require('timekeeper');
@@ -194,7 +195,8 @@ describe('Client', function () {
       return this.client.authorizationCallback('https://rp.example.com/cb', {
         code: 'codeValue',
       })
-        .then(fail, () => {
+        .then(fail, (arg) => {
+          console.log('got to success case', arg);
           expect(nock.isDone()).to.be.true;
         });
     });

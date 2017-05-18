@@ -3,7 +3,9 @@
 const Issuer = require('../../lib').Issuer;
 const expect = require('chai').expect;
 const nock = require('nock');
-const got = require('got');
+// const got = require('got');
+const got = require('../../lib/request');
+
 
 const fail = () => { throw new Error('expected promise to be rejected'); };
 
