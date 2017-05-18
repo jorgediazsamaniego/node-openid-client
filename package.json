@@ -8,7 +8,7 @@
     "test": "mocha",
     "lint": "eslint lib example test"
   },
-  "repository": "panva/node-openid-client",
+  "repository": "joshbarr/node-openid-client",
   "engines": {
     "node": ">=4"
   },
