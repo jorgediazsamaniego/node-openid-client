@@ -1,9 +1,15 @@
-# openid-client
+# openid-client (with request)
 
 [![build][travis-image]][travis-url] [![codecov][codecov-image]][codecov-url]
 
 openid-client is a server side [OpenID][openid-connect] Relying Party (RP, Client) implementation for
 Node.js, supports [passport][passport-url].
+
+## Differences from openid-client
+
+This package has been modified to use the `request` library for making HTTP connections,
+rather than using `got`. This makes it more compatible with tunneling agents where
+you might be behind a proxy.
 
 **Table of Contents**
 
@@ -53,7 +59,7 @@ openid-client.
 
 
 ## Certification
-[<img width="184" height="96" align="right" src="https://cdn.rawgit.com/panva/node-openid-client/38cf016b/OpenID_Certified.png" alt="OpenID Certification">][openid-certified-link]  
+[<img width="184" height="96" align="right" src="https://cdn.rawgit.com/panva/node-openid-client/38cf016b/OpenID_Certified.png" alt="OpenID Certification">][openid-certified-link]
 Filip Skokan has [certified][openid-certified-link] that [openid-client][npm-url]
 conforms to the RP Basic, RP Implicit, RP Hybrid, RP Config and RP Dynamic profiles
 of the OpenID Connect™ protocol.

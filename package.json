@@ -1,5 +1,5 @@
 {
-  "name": "openid-client",
+  "name": "openid-client-request",
   "version": "1.10.0",
   "description": "OpenID Connect Relying Party (RP, Client) implementation for Node.js servers, supports passportjs",
   "main": "lib/index.js",
@@ -12,7 +12,7 @@
   "engines": {
     "node": ">=4"
   },
-  "homepage": "https://github.com/panva/node-openid-client",
+  "homepage": "https://github.com/joshbarr/node-openid-client",
   "keywords": [
     "openid",
     "connect",
