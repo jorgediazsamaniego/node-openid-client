@@ -1,5 +1,5 @@
 {
-  "name": "openid-client-request",
+  "name": "openid-client-request-es5",
   "version": "1.10.2",
   "description": "OpenID Connect Relying Party (RP, Client) implementation for Node.js servers, supports passportjs",
   "main": "dist/index.js",
@@ -9,11 +9,11 @@
     "lint": "eslint lib example test",
     "postinstall": "./node_modules/.bin/babel lib --out-dir dist"
   },
-  "repository": "joshbarr/node-openid-client",
+  "repository": "jorgediazsamaniego/node-openid-client-es5",
   "engines": {
     "node": ">=4"
   },
-  "homepage": "https://github.com/joshbarr/node-openid-client",
+  "homepage": "https://github.com/jorgediazsamaniego/node-openid-client-es5",
   "keywords": [
     "openid",
     "connect",
