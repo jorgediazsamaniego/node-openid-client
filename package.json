@@ -6,8 +6,7 @@
   "scripts": {
     "coverage": "nyc mocha",
     "test": "mocha",
-    "lint": "eslint lib example test",
-    "postinstall": "./node_modules/.bin/babel lib --out-dir dist"
+    "lint": "eslint example test"
   },
   "repository": "jorgediazsamaniego/node-openid-client-es5",
   "engines": {
@@ -39,7 +38,7 @@
   "author": "Filip Skokan <panva.ip@gmail.com>",
   "license": "MIT",
   "files": [
-    "lib"
+    "dist"
   ],
   "devDependencies": {
     "chai": "^3.5.0",
